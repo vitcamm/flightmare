@@ -22,12 +22,16 @@ namespace flightlib {
 
 enum UnityScene {
   INDUSTRIAL = 0,
-  WAREHOUSE = 1,
-  GARAGE = 2,
-  TUNELS = 4,
-  NATUREFOREST = 3,
+  //WAREHOUSE = 1,
+  //GARAGE = 2,
+  //TUNELS = 4,
+  //NATUREFOREST = 3,
   // total number of environment
-  SceneNum = 5
+  //TESTSCENE = 5,
+  //INDUSTRIAL = 0,
+  TEST = 1,
+  ELLIPSE = 2,
+  SceneNum = 3
 };
 
 // Unity Camera, should not be used alone.
@@ -94,7 +98,7 @@ struct Object_t {
 
 struct SettingsMessage_t {
   // scene/render settings
-  size_t scene_id = UnityScene::WAREHOUSE;
+  size_t scene_id = UnityScene::INDUSTRIAL;
 
   //
   std::vector<Vehicle_t> vehicles;
